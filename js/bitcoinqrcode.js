@@ -59,7 +59,7 @@
 			qrcode;
 
 		$('#qrcode').qrcode({
-			text: 'bitcoin:' + this.address,
+			text: 'bitcoincash:' + this.address,
 			width: this.pixels * 26,
 			height: this.pixels * 26
 		});
@@ -127,7 +127,7 @@
 			data: {
 				type: 'base64',
 				title: this.address,
-				description: 'Via bitcoinqrcode.org',
+				description: 'via cashqr.herokuapp.com/',
 				image: image
 			},
 			dataType: 'json'
