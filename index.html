@@ -1,30 +1,24 @@
 <!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
 
-<html>
-	<head>
-		<meta charset="utf-8">
+		<title>Bitcoin Cash QR Code Generator</title>
 
-		<title>Bitcoin QR Code Generator</title>
-
-		<meta name="description" content="Bitcoin QR code generator.">
-		<meta name="keywords"    content="bitcoin, litecoin, qr, generator, tool">
-
-		<link rel="stylesheet" href="lib/foundation/foundation.min.css">
-		<link rel="stylesheet" href="css/bitcoinqrcode.css">
-	</head>
-	<body>
+		<meta name="description" content="Bitcoin Cash QR code generator.">
+	
+		<link rel="stylesheet" href="./index_files/foundation.min.css">
+		<link rel="stylesheet" href="./index_files/bitcoinqrcode.css">
+	<body style="">
     <div class="row">
 		<div class="large-12 columns">
-			<h1>Bitcoin QR Code Generator</h1>
-
-			<p>Click a <a href="http://en.wikipedia.org/wiki/QR_code">QR code</a> to upload it to <a href="http://imgur.com">Imgur</a>. Find out more about <a href="http://bitcoin.org/">Bitcoin</a>.</p>
+			<h1>Bitcoin Cash QR Code Generator</h1>
 
 			<form method="post">
 				<div class="row">
 					<div class="large-9 columns">
-						<label for="address">Bitcoin address:</label>
+						<label for="address">Your Bitcoin Cash address:</label>
 
-						<input id="address" type="text" placeholder="18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4">
+						<input id="address" type="text" placeholder="1BitcoinH8DeV6XGQjcxpYWDB7bWPAiPNf">
 					</div>
 					<div class="large-3 columns">
 						<label for="size">Size (px):</label>
@@ -33,86 +27,31 @@
 					</div>
 				</div>
 			</form>
-
-			<div id="qrcodes"></div>
+			<img crossOrigin="Anonymous"></img>
+			<div id="qrcodes"><div><canvas width="250" height="250" style="display: inline;"></canvas></div><div><canvas width="250" height="250" style="display: inline;"></canvas></div><div><canvas width="250" height="250" style="display: inline;"></canvas></div><div><canvas width="250" height="250" style="display: inline;"></canvas></div><div><canvas width="250" height="250" style="display: inline;"></canvas></div><div><canvas width="250" height="250" style="display: inline;"></canvas></div></div>
 
 			<hr>
 
 			<footer>
-				<div id="share">
-					<div class="fb-like" data-href="http://bitcoinqrcode.org/" data-send="false" data-layout="button_count" data-width="105" data-show-faces="false" style="margin-bottom: 4px;"></div>
-
-					<div><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bitcoinqrcode.org/" data-text="#Bitcoin QR Code Generator" data-count="horizontal">Tweet</a></div>
-
-					<div class="g-plusone" data-href="http://bitcoinqrcode.org/" data-size="medium" data-count="true"></div>
-				</div>
-
-				By <a href="http://alias.io">Elbert Alias</a>. Donate Bitcoin: 18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4 <em>&mdash; Thanks!</em>
-
+				
+				Forked from work by <a href="http://alias.io/">Elbert Alias</a>. Donate Bitcoin to Elbert: 18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4 
+				
 				<br><br>
+				
+				My donation address: 1BitcoinH8DeV6XGQjcxpYWDB7bWPAiPNf
+				
+				<br><br>
+				
+				<img src="./index_files/donate1.png">
 
-				<img src="img/donate.png">
 			<footer>
 
-			<div id="qrcode"></div>
-		</div>
+			<div id="qrcode"><canvas width="962" height="962"></canvas></div>
+		</footer></footer></div>
 
-		<a id="fork" href="https://github.com/ElbertF/BitcoinQRCode.org">Fork me on Github</a>
+		<a id="fork" href="https://github.com/bitsko/BitcoinQRCode.org">Fork me on Github</a>
 
-		<script src="lib/jquery/jquery-2.0.3.min.js"></script>
-		<script src="lib/jquery-qrcode/src/qrcode.js"></script>
-		<script src="lib/jquery-qrcode/src/jquery.qrcode.js"></script>
-		<script src="conf/imgur.js"></script>
-		<script src="js/bitcoinqrcode.js"></script>
-
-		<!-- Piwik -->
-		<script type="text/javascript">
-		  var _paq = _paq || [];
-		  _paq.push(["trackPageView"]);
-		  _paq.push(["enableLinkTracking"]);
-
-		  (function() {
-			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.alias.io/";
-			_paq.push(["setTrackerUrl", u+"piwik.php"]);
-			_paq.push(["setSiteId", "6"]);
-			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-			g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-		  })();
-		</script>
-		<!-- End Piwik Code -->
-
-		<!-- Twitter -->
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-		<!-- Google Plus -->
-		<link href="https://plus.google.com/b/107008529118023432137/" rel="publisher"/>
-
-		<script type="text/javascript">
-		(function()
-		{var po = document.createElement("script");
-		po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(po, s);
-		})();
-		</script>
-
-		<script type="text/javascript">
-		(function() {
-		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		po.src = 'https://apis.google.com/js/plusone.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		})();
-		</script>
-
-		<!-- Facebook -->
-		<div id="fb-root"></div>
-
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	</body>
-</html>
+	        <script src="./index_files/jquery-2.0.3.min.js"></script>
+		<script src="./index_files/qrcode.js"></script>
+		<script src="./index_files/jquery.qrcode.js"></script>
+		<script src="./js/bitcoinqrcode.js"></script>
